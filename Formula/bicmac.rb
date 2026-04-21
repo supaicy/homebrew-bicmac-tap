@@ -1,8 +1,8 @@
 class Bicmac < Formula
   desc "macOS menu bar utility: clipboard history, window snapping, app switching"
   homepage "https://github.com/supaicy/BicMac"
-  url "https://github.com/supaicy/BicMac/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  url "https://github.com/supaicy/BicMac-releases/releases/download/v0.1.1/BicMac-0.1.1.tar.gz"
+  sha256 "75f0562e6c22302777b31b1c3a1049ace69cf3deaa74d30544980f1aa9f42d56"
   license "MIT"
 
   depends_on :macos => :sonoma
