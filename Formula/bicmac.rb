@@ -13,6 +13,7 @@ class Bicmac < Formula
   def install
     ENV["SWIFTPM_CACHE_DIR"] = buildpath/".swiftpm-cache"
     ENV["SWIFTPM_ENABLE_SANDBOX"] = "0"
+    ENV["DEVELOPER_DIR"] = "/Applications/Xcode.app/Contents/Developer"
 
     system "swift", "build", "-c", "release", "--product", "BicMacApp"
 
