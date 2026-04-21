@@ -7,7 +7,12 @@ class Bicmac < Formula
 
   depends_on :macos => :sonoma
 
+  # SPM이 홈 디렉토리에 쓰려고 하므로 Homebrew 샌드박스 비활성화
+  env :std
+
   def install
+    ENV["SWIFTPM_CACHE_DIR"] = buildpath/".swiftpm-cache"
+
     system "swift", "build", "-c", "release", "--product", "BicMacApp"
 
     bin_path = `swift build -c release --show-bin-path`.strip
