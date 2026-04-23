@@ -1,6 +1,6 @@
 cask "bicmac" do
-  version "0.1.2"
-  sha256 "119b3c9aa90d8570e420eb70ece733e4477174e3fcf1d9f94e667fc70a83eaca"
+  version "0.1.3"
+  sha256 "6ff534913d056db2a4ee46e403ecc822629dbb67e6b73e4d6fb0d15965e95bf2"
 
   url "https://github.com/supaicy/BicMac-releases/releases/download/v#{version}/BicMac-#{version}.app.zip"
   name "BicMac"
