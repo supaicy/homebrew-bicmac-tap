@@ -5,7 +5,7 @@
 <h1 align="center">BicMac</h1>
 
 <p align="center">
-  <em>A lightweight macOS menu bar app that keeps your clipboard, screenshots, windows, and displays within a keystroke.</em>
+  <em>Menu bar app for clipboard history, screenshots, window snapping, and app switching.</em>
 </p>
 
 <p align="center">
@@ -25,13 +25,13 @@
 
 | Module | Description |
 |---|---|
-| 🍔 **Clipboard** | Persistent history with full-text search, popover at cursor, arrow-key + Enter selection, number-key quick copy |
-| 📸 **Screenshot** | Full screen, region, and window capture via ScreenCaptureKit |
-| 🪟 **Window Manager** | Snap windows to preset positions with a single hotkey |
-| ⚡ **App Switcher** | Visual app and window switcher with live thumbnails |
-| 🖥️ **Monitor Control** | Adjust brightness and display settings from the menu bar |
+| **Clipboard** | Searchable history, popover at cursor, arrow keys + number keys to paste |
+| **Screenshot** | Full screen, region, or window via ScreenCaptureKit |
+| **Window Manager** | Snap to preset positions with a hotkey |
+| **App Switcher** | App and window switcher with live thumbnails |
+| **Monitor Control** | Brightness and display settings from the menu bar |
 
-All hotkeys are fully user-configurable with live conflict detection.
+All hotkeys are user-configurable. Conflicts are detected live.
 
 ---
 
@@ -65,9 +65,9 @@ brew uninstall --cask bicmac
 
 ## Usage
 
-1. Launch **BicMac** — it appears as a 🍔 icon in your menu bar
-2. Grant **Accessibility** and **Screen Recording** permissions when prompted
-3. Click the icon to open the panel and switch between modules using the tab bar
+1. Launch **BicMac**. A 🍔 icon appears in the menu bar.
+2. Grant **Accessibility** and **Screen Recording** permissions when prompted.
+3. Click the icon to open the panel. Switch modules with the tab bar.
 
 ---
 
@@ -77,10 +77,10 @@ brew uninstall --cask bicmac
 |---|---|
 | Clipboard Popover | `⌘⇧C` |
 | App Switcher | `⌥⇥` (Option + Tab) |
-| Full Screen Screenshot | — |
-| Region Screenshot | — |
-| Window Screenshot | — |
-| Window Snap Picker | — |
+| Full Screen Screenshot | unset |
+| Region Screenshot | unset |
+| Window Screenshot | unset |
+| Window Snap Picker | unset |
 
 Unset hotkeys can be assigned from each module's settings panel.
 
@@ -88,7 +88,7 @@ Unset hotkeys can be assigned from each module's settings panel.
 
 ## Security
 
-BicMac is distributed with ad-hoc signing. On first launch, macOS may show a Gatekeeper warning — go to **System Settings → Privacy & Security → Open Anyway** to allow it.
+BicMac is distributed with ad-hoc signing. On first launch, macOS may show a Gatekeeper warning. Go to **System Settings → Privacy & Security → Open Anyway** to allow it.
 
 - Binaries: [github.com/supaicy/BicMac-releases](https://github.com/supaicy/BicMac-releases)
-- Builds are produced locally on a Mac; no third-party build servers are involved.
+- Builds are produced locally on a Mac. No third-party build servers.
