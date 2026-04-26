@@ -44,16 +44,24 @@ All hotkeys are user-configurable. Conflicts are detected live.
 
 ## Installation
 
+### Homebrew (recommended)
+
 ```sh
 brew tap supaicy/bicmac-tap
 brew install --cask bicmac
 ```
+
+### Direct download (.dmg)
+
+Don't use Homebrew? Download the latest `.dmg` from [BicMac-releases](https://github.com/supaicy/BicMac-releases/releases/latest) and drag `BicMac.app` into Applications. See [Security](#security) for the one-time first-launch step.
 
 ### Update
 
 ```sh
 brew update && brew upgrade --cask bicmac
 ```
+
+For .dmg installs: redownload from the same releases page and replace `BicMac.app` in Applications. The in-app banner notifies you when a new version is out.
 
 ### Uninstall
 

@@ -44,16 +44,24 @@
 
 ## 설치
 
+### Homebrew (권장)
+
 ```sh
 brew tap supaicy/bicmac-tap
 brew install --cask bicmac
 ```
+
+### 직접 다운로드 (.dmg)
+
+Homebrew를 쓰지 않는다면 [BicMac-releases](https://github.com/supaicy/BicMac-releases/releases/latest)에서 최신 `.dmg`를 받아 `BicMac.app`을 응용 프로그램 폴더로 드래그하세요. 첫 실행 단계는 아래 [보안](#보안) 섹션을 참고하세요.
 
 ### 업데이트
 
 ```sh
 brew update && brew upgrade --cask bicmac
 ```
+
+.dmg로 설치한 경우, 같은 릴리즈 페이지에서 새 `.dmg`를 받아 응용 프로그램 폴더의 `BicMac.app`을 교체하면 됩니다. 새 버전이 나오면 앱 내 배너로 알려 드립니다.
 
 ### 삭제
 
